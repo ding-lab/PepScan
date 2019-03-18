@@ -1,0 +1,19 @@
+To create an Ensembl database in /ifs/data/proteomics/tcga/databases:
+
+1. Create a directory: For example /ifs/data/proteomics/tcga/databases/ensembl_human_37.70
+2. Download gtf, fasta, and dat (put the dat files in a directory called proteome) files from 
+   Ensembl (http://useast.ensembl.org/info/data/ftp/index.html). 
+   For example, Homo_sapiens.GRCh37.70.pep.all.fa.gz and Homo_sapiens.GRCh37.70.gtf.gz
+3. Run perl /ifs/data/proteomics/tcga/scripts/quilts/v1.0/prepare_ensembl.pl 
+   WU: perl /gscmnt/gc2108/info/medseq/proteogenomics/bin/quilts/v1.0/prepare_ensembl.pl /gscmnt/gc2108/info/medseq/proteogenomics/databases/ensembl_human_37.70 /gscmnt/gc2108/info/medseq/proteogenomics/databases/genome_human
+
+
+
+To run quilts:
+
+0. Archive old results: /ifs/data/proteomics/tcga/scripts/quilts/v1.0/quilts_fasta_archive.pl
+1a. Using Tophat junctions: /ifs/data/proteomics/tcga/scripts/quilts/v1.0/quilts_tcga_tophat.pl
+1b. Using STAR junctions: /ifs/data/proteomics/tcga/scripts/quilts/v1.0/quilts_tcga_star.pl
+2. Get stats: /ifs/data/proteomics/tcga/scripts/quilts/v1.0/quilts_fasta_stat.pl
+3. Prepare results for publication: /ifs/data/proteomics/tcga/scripts/quilts/v1.0/quilts_fasta_publish.pl
+   
