@@ -1,0 +1,8 @@
+NumMods=3
+144.102063,*,fix,N-term,iTRAQ4plex
+144.102063,K,fix,any,iTRAQ4plex
+C2H3N1O1,C,fix,any,Carbamidomethyl       # Fixed Carbamidomethyl C (alkylation)
+O1,M,opt,any,Oxidation            # Oxidized methionine
+79.966331,S,opt,any,Phosphorylation
+79.966331,T,opt,any,Phosphorylation
+79.966331,Y,opt,any,Phosphorylation
